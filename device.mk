@@ -501,3 +501,6 @@ PRODUCT_COPY_FILES += \
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/chenfeng/chenfeng-vendor.mk)
+
+# Vendor MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/chenfeng-miuicamera/device.mk)

@@ -249,3 +249,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
 include vendor/xiaomi/chenfeng/BoardConfigVendor.mk
+
+# Vendor MiuiCamera
+-include device/xiaomi/chenfeng-miuicamera/BoardConfig.mk

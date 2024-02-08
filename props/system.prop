@@ -1,6 +1,9 @@
 # Device
 ro.product.mod_device=chenfeng_global
 
+# Radio VoNR Calling
+persist.vendor.vonr_setting_support=1
+
 # QTI
 ro.vendor.qti.va_aosp.support=1
 

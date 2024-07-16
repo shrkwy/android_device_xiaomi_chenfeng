@@ -311,8 +311,9 @@ PRODUCT_PACKAGES += \
     WifiOverlayChenfengPOCO \
     WifiOverlayChenfengRedmi
 
+# Parts
 PRODUCT_PACKAGES += \
-    NcmTetheringOverlay
+    XiaomiParts
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

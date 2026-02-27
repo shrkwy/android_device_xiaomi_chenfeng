@@ -446,6 +446,26 @@ odm/lib64/camera/com.qti.tuned.chenfeng_sunny_s5kgd2sm03_front.bin
 odm/lib64/camera/com.qti.tuned.default.bin
 
 # Camera missing blobs 
+vendor/etc/camera/cameraopt_perf.json
+vendor/etc/camera/cameraopt_vendor.json                    
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.quickcamera.xml                
+vendor/framework/androidx.camera.extensions.impl.jar
+vendor/lib64/libFace3DTA.so
+vendor/lib64/libFace3D_hlos.so
+vendor/lib64/libQ6MSFR_manager_stub.so
+vendor/lib64/libSNPESample.so
+vendor/lib64/libcameraopt.so
+vendor/lib64/libface3d_dev.so
+vendor/lib64/libmialgo.so
+vendor/lib64/libos.so
+vendor/lib64/libqshcamera.so
+vendor/lib64/libsynx.so
+vendor/lib64/libthreadutils.so
+vendor/lib64/libubwcp.so
+vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so
+vendor/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so
+vendor/lib64/vendor.xiaomi.hardware.seccam-V1-ndk.so
+vendor/lib64/vendor.xiaomi.sensor.camera-V1-ndk.so
 odm/lib64/libmiZA.so
 odm/lib64/libmiphone_preview_mdbokeh.so
 odm/lib64/libIntelligentFocus.so

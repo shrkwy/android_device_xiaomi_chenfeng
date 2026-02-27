@@ -217,6 +217,21 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/vendor.qti.hardware.camera.aon-service-impl.so',
         'odm/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
         'odm/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so',
+        'odm/lib64/camera/components/com.xiaomi.node.smooth_transition.so',
+        'odm/lib64/camera/com.qti.sensor.chenfeng_ofilm_s5kjn1_tele.so',
+	'odm/lib64/camera/com.qti.actuator.chenfeng_ofilm_ovx8000_gt9764ber_wide_actuator.so',
+	'odm/lib64/camera/com.qti.actuator.chenfeng_ofilm_s5kjn1_dw9800v_tele_actuator.so',
+	'odm/lib64/camera/com.qti.actuator.chenfeng_sunny_s5kgd2sm03_dw9800v_front_actuator.so',
+	'odm/lib64/camera/com.qti.eeprom.chenfeng_aac_s5kgd2sm03_gt24p64e_front_ultra_eeprom.so',
+	'odm/lib64/camera/com.qti.eeprom.chenfeng_ofilm_ov13b10_p24c64e_ultra_eeprom.so',
+	'odm/lib64/camera/com.qti.eeprom.chenfeng_ofilm_ovx8000_gt24p128f_wide_eeprom.so',
+	'odm/lib64/camera/com.qti.eeprom.chenfeng_ofilm_s5kjn1_gt24p128e_tele_eeprom.so',
+	'odm/lib64/camera/com.qti.eeprom.chenfeng_sunny_s5kgd2sm03_p24c64f_front_eeprom.so',
+	'odm/lib64/camera/com.qti.sensor.chenfeng_aac_s5kgd2sm03_front_ultra.so',
+	'odm/lib64/camera/com.qti.sensor.chenfeng_ofilm_ov13b10_ultra.so',
+	'odm/lib64/camera/com.qti.sensor.chenfeng_ofilm_ovx8000_wide.so',
+	'odm/lib64/camera/com.qti.sensor.chenfeng_sunny_s5kgd2sm03_front.so',
+	'odm/lib64/camera/components/com.mi.node.rearvideo.so',
     ): blob_fixup()
         .replace_needed(
             'android.hardware.graphics.allocator-V1-ndk.so',
@@ -298,7 +313,6 @@ module = ExtractUtilsModule(
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
-    add_firmware_proprietary_file=True,
 )
 
 if __name__ == '__main__':

@@ -129,16 +129,11 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio configs
 odm/etc/audio/sku_cliffs/adsp_sleep_monitor.conf
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_cliffs_mtp.xml
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_dynamic.xml
-odm/etc/audio/sku_cliffs/foursemi/mixer_paths_overlay_static.xml
-odm/etc/audio/sku_cliffs/foursemi/resourcemanager_cliffs_mtp.xml
 odm/etc/audio/sku_cliffs/mixer_paths_cliffs_mtp.xml
 odm/etc/audio/sku_cliffs/mixer_paths_overlay_dynamic.xml
 odm/etc/audio/sku_cliffs/mixer_paths_overlay_static.xml
 odm/etc/audio/sku_cliffs/resourcemanager_cliffs_mtp.xml
 odm/etc/backend_conf.xml
-odm/etc/backend_conf_fs.xml
 odm/etc/usecaseKvManager.xml
 vendor/etc/audio_diag.cfg
 vendor/etc/card-defs.xml
@@ -147,7 +142,6 @@ vendor/etc/microphone_characteristics.xml
 
 # Audio firmware
 odm/firmware/aw882xx_acf.bin
-odm/firmware/fs19xx.fsm
 
 # Audio graph manager
 vendor/lib64/libagm.so

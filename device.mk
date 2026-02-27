@@ -215,7 +215,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
-    init.peridot.rc \
+    init.chenfeng.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc
@@ -237,7 +237,7 @@ PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore_V3.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/hal_uuid_map.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_peridot.xml
+    $(LOCAL_PATH)/configs/hal_uuid_map.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_chenfeng.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
@@ -289,22 +289,22 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureOverlayPeridot \
-    CarrierConfigOverlayPeridot \
-    FrameworkOverlayPeridot \
-    LineageDialerOverlayPeridot \
-    LineageSDKOverlayPeridot \
-    LineageSettingsOverlayPeridot \
-    NfcOverlayPeridot \
-    SecureElementOverlayPeridot \
-    SettingsOverlayPeridot \
-    SettingsProviderOverlayPeridotPOCO \
-    SettingsProviderOverlayPeridotRedmi \
-    SystemUIOverlayPeridot \
-    TelephonyOverlayPeridot \
-    WifiOverlayPeridot \
-    WifiOverlayPeridotPOCO \
-    WifiOverlayPeridotRedmi
+    ApertureOverlayChenfeng \
+    CarrierConfigOverlayChenfeng \
+    FrameworkOverlayChenfeng \
+    LineageDialerOverlayChenfeng \
+    LineageSDKOverlayChenfeng \
+    LineageSettingsOverlayChenfeng \
+    NfcOverlayChenfeng \
+    SecureElementOverlayChenfeng \
+    SettingsOverlayChenfeng \
+    SettingsProviderOverlayChenfengPOCO \
+    SettingsProviderOverlayChenfengRedmi \
+    SystemUIOverlayChenfeng \
+    TelephonyOverlayChenfeng \
+    WifiOverlayChenfeng \
+    WifiOverlayChenfengPOCO \
+    WifiOverlayChenfengRedmi
 
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
@@ -483,4 +483,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml
 
 # Vendor
-$(call inherit-product, vendor/xiaomi/peridot/peridot-vendor.mk)
+$(call inherit-product, vendor/xiaomi/chenfeng/chenfeng-vendor.mk)

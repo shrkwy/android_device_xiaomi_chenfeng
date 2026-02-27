@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/peridot
+DEVICE_PATH := device/xiaomi/chenfeng
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -54,7 +54,7 @@ TARGET_PROVIDES_LIBAGM := true
 TARGET_PROVIDES_LIBAR_PAL := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := peridot
+TARGET_BOOTLOADER_BOARD_NAME := chenfeng
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -104,12 +104,12 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8635
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/pineapple_GKI.config \
-    vendor/peridot_GKI.config
+    vendor/chenfeng_GKI.config
 
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
-    swinfo.fingerprint=peridot:$(LINEAGE_VERSION) \
-    mtdoops.fingerprint=peridot:$(LINEAGE_VERSION)
+    swinfo.fingerprint=chenfeng:$(LINEAGE_VERSION) \
+    mtdoops.fingerprint=chenfeng:$(LINEAGE_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -267,4 +267,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
-include vendor/xiaomi/peridot/BoardConfigVendor.mk
+include vendor/xiaomi/chenfeng/BoardConfigVendor.mk

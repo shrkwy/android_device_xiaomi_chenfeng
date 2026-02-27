@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.peridot"
+#define LOG_TAG "UdfpsHandler.chenfeng"
 
 #include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
@@ -79,7 +79,7 @@ struct disp_base displayBasePrimary = {
 
 }  // anonymous namespace
 
-class PeridotUdfpsHandler : public UdfpsHandler {
+class ChenfengUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
@@ -226,7 +226,7 @@ class PeridotUdfpsHandler : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new PeridotUdfpsHandler();
+    return new ChenfengUdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {

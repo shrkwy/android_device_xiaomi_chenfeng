@@ -18,6 +18,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/xiaomi/chenfeng',
     'hardware/qcom-caf/sm8650',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
@@ -237,6 +238,14 @@ blob_fixups: blob_fixups_user_type = {
             'android.hardware.graphics.allocator-V1-ndk.so',
             'android.hardware.graphics.allocator-V2-ndk.so'
     ),
+    (
+        'odm/lib64/camera/plugins/com.xiaomi.plugin.gainmap.so'
+    ): blob_fixup()
+        .add_needed('libcameraplugin_shim.so'),
+    (
+        'odm/lib64/camera/plugins/com.xiaomi.plugin.jpegrAggr.so'
+    ): blob_fixup()
+        .add_needed('libcamerahdr_shim.so'),
     'odm/lib64/com.qti.feature2.anchorsync.so': blob_fixup()
         .replace_needed(
             'android.hardware.graphics.allocator-V1-ndk.so',

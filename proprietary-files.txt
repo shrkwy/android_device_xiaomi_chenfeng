@@ -2642,6 +2642,9 @@ vendor/lib64/libmm-hdcpmgr.so
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IR
+odm/lib64/hw/consumerir.qcom.so
+
 # Kernel
 vendor/bin/init.qti.write.sh
 vendor/bin/system_dlkm_modprobe.sh

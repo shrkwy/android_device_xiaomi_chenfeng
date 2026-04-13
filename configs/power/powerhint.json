@@ -58,7 +58,9 @@
         "0:0 1:0 2:0 3:0 4:0 5:0 6:0 7:0",
         "0:1593600 1:1593600 2:1593600 3:1286400 4:1286400 5:1286400 6:1286400 7:2150400",
         "0:2016000 1:2016000 2:2016000 3:1593600 4:1593600 5:1593600 6:1593600 7:1900800",
-        "0:2016000 1:2016000 2:2016000 3:2707200 4:2707200 5:2707200 6:2707200 7:2918400"
+        "0:2016000 1:2016000 2:2016000 3:2707200 4:2707200 5:2707200 6:2707200 7:2918400",
+        "0:2016000 1:2016000 2:2016000 3:1708800 4:1708800 5:1708800 6:1708800 7:2457600",
+        "0:2016000 1:2016000 2:2016000 3:1708800 4:1708800 5:1708800 6:1708800 7:2918400"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true,
@@ -321,6 +323,28 @@
       "Values": [
         "0",
         "1"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GpuMinPwrlevel",
+      "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+      "Values": [
+        "10",
+        "6",
+        "4"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "GpuMinFreq",
+      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
+      "Values": [
+        "255000000",
+        "500000000",
+        "684000000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -806,6 +830,186 @@
       "Node": "MSMPerfMinFreq",
       "Value": "0:1593600 1:1593600 2:1593600 3:1286400 4:1286400 5:1286400 6:1286400 7:2150400",
       "Duration": 1000
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "MSMPerfMinFreq",
+      "Value": "0:2016000 1:2016000 2:2016000 3:1708800 4:1708800 5:1708800 6:1708800 7:2918400",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_proc_sys_walt_sched_boost",
+      "Value": "1",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_proc_sys_walt_sched_upmigrate",
+      "Value": "50 85",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_proc_sys_walt_sched_downmigrate",
+      "Value": "10 85",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CoreCtlEnableBig",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_proc_sys_walt_sched_min_task_util_for_colocation",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_proc_sys_walt_sched_min_task_util_for_boost",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_proc_sys_walt_sched_busy_hysteresis_enable_cpus",
+      "Value": "248",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_proc_sys_walt_sched_busy_hyst_ns",
+      "Value": "39",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_proc_sys_walt_sched_idle_enough",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CoreCtlMinCoresLittle",
+      "Value": "3",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "_proc_sys_walt_sched_boost",
+      "Value": "2",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "MSMPerfMinFreq",
+      "Value": "0:2016000 1:2016000 2:2016000 3:2707200 4:2707200 5:2707200 6:2707200 7:2918400",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "_proc_sys_walt_sched_upmigrate",
+      "Value": "50 85",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "_proc_sys_walt_sched_downmigrate",
+      "Value": "10 85",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "CoreCtlEnableBig",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "CoreCtlEnablePrime",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "CoreCtlMinCoresLittle",
+      "Value": "3",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "_proc_sys_walt_sched_min_task_util_for_colocation",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "_proc_sys_walt_sched_min_task_util_for_boost",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "PMQoSCpuDmaLatency",
+      "Value": "1",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "_proc_sys_walt_sched_busy_hysteresis_enable_cpus",
+      "Value": "248",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "_proc_sys_walt_sched_busy_hyst_ns",
+      "Value": "39",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME_LOADING",
+      "Node": "_proc_sys_walt_sched_idle_enough",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "CoreCtlEnablePrime",
+      "Value": "0",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_sys_devices_system_cpu_cpu0_cpufreq_walt_rtg_boost_freq",
+      "Value": "595200",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "PMQoSCpuDmaLatency",
+      "Value": "1",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "_sys_devices_system_cpu_dynpf_enable_dynpf",
+      "Value": "1",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "GpuMinPwrlevel",
+      "Value": "6",
+      "Duration": 0
+    },
+    {
+      "PowerHint": "GAME",
+      "Node": "GpuMinFreq",
+      "Value": "500000000",
+      "Duration": 0
     }
   ]
 }

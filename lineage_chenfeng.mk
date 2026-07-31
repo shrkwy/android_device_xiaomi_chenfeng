@@ -24,8 +24,8 @@ PRODUCT_SYSTEM_NAME := chenfeng_global
 PRODUCT_SYSTEM_DEVICE := chenfeng
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="chenfeng_global-user 14 UKQ1.240624.001 OS2.0.207.0.VNJCNXM release-keys" \
-    BuildFingerprint=Xiaomi/chenfeng_global/chenfeng:14/UKQ1.240624.001/OS2.0.207.0.VNJCNXM:user/release-keys \
+    BuildDesc="chenfeng_global-user 16 BP2A.250605.031.A3 OS3.0.307.0.WNJCNXM release-keys" \
+    BuildFingerprint=Xiaomi/chenfeng_global/chenfeng:16/BP2A.250605.031.A3/OS3.0.307.0.WNJCNXM:user/release-keys \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 

@@ -114,8 +114,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti.recovery
 
 # CIT sensor service dependency (missing hypsys lib caused a crash-loop -> RescueParty)
-PRODUCT_PACKAGES += \
-    xiaomi.system.hypsys.common-V1-ndk
+# PRODUCT_PACKAGES += \
+#     xiaomi.system.hypsys.common-V1-ndk
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -154,9 +154,9 @@ $(foreach display_id, 4630947195234848131 4630947033261136259 463094654558005517
     ))
 
 # Dolby
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    $(LOCAL_PATH)/configs/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
+# PRODUCT_COPY_FILES += \
+#     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+#     $(LOCAL_PATH)/configs/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
 
 PRODUCT_PACKAGES += \
     DolbyAtmos
